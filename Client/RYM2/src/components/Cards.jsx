@@ -4,10 +4,10 @@ export default function Cards({characters, onClose}) {
    return (
        <div>
          {
-            characters.map(({id, name, status, species, gender, origin, image}) => {
+            characters.map(({id, name, status, species, gender, origin, image}, index) => {
                return (
                   <Card
-                  key={id}
+                  key={index}
                   id={id}
                   name={name}
                   status={status}

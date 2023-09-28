@@ -5,10 +5,10 @@ const Favorites = ({ myFavorites }) => {
     return (
         <>
             {
-                myFavorites?.map(fav => {
+                myFavorites?.map((fav, index) => {
                     return (
                         <Card
-                            key={fav.id}
+                            key={index}
                             id={fav.id}
                             name={fav.name}
                             species={fav.species}
